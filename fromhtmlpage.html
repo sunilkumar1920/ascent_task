@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <style>
+        /* Add your CSS styles here for responsive design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+           width:80%;
+           mix-width:800px;
+           margin: 0 auto;
+           padding: 20px;
+           float:right;
+        }
+.container-style{
+           min-width:1000px;
+           margin: 0 auto;
+           padding: 20px;
+          position:relative;
+}
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],input[type="time"],
+        input[type="number"],input[type="date"]
+        {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+        }
+
+
+       .left{
+            width: 400px;
+           float:left;
+
+          }
+           .right{
+             width: 400px;
+            
+            padding-left: 20px;
+           float:left;
+          }
+.custom-select {
+  min-width: 350px;
+  position: relative;
+}
+
+select {
+  width: 100%;
+  font-size: 1.15rem;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+   margin-bottom: 20px;
+}
+.logo-section{
+   width: 400px;
+   float:left; 
+margin-bottom:20px;
+height:138px;
+}
+.logo-section-right{
+ width: 400px;
+float:right; 
+margin-bottom:20px;
+padding-left: 20px;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #FFFFFF 0% 0% no-repeat padding-box;
+  position: fixed;
+  top: 0;
+  width: 100%;
+ border: 1px solid #DADCE0;
+ height: 70px;
+opacity: 1;
+ transition: transform 0.3s; 
+    z-index: 1000; 
+box-shadow: 0px 3px 6px #00000029;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+.img-style{
+width: 208px;
+float:left;
+margin-left:50px;
+}
+.text-style1{
+width: 260px;
+float:left;
+margin-left:110px;
+}
+.text-style{
+ padding:10px;
+ float:right;
+}
+.text-style img{
+ position: absolute;
+ padding-left:30px;
+}
+.sidebar-style{
+  float:left;
+ width:20%;
+ margin: 0 auto;
+ position: fixed;
+display:flex;
+text-align: center;
+}
+.sidebar-left{
+top: 65px;
+left: 0px;
+width:100px;
+height: 1000px;
+background: #F7F7F7 0% 0% no-repeat padding-box;
+opacity: 1;
+float:left
+text-align: center;
+}
+
+.sidebar-right{
+width:290px;
+height: 1000px;
+border-right:1px solid grey;
+}
+.main{
+margin-top:71px;
+}
+
+.header{
+top: 70px;
+left: 380px;
+width: 100%;
+height: 49px;
+
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+opacity: 1;
+position:fixed;
+}
+.header1{
+width: 100%;
+height: 100px;
+}
+
+.sidebar-right-2{
+
+width:208px;
+height: 50px;
+float:right;
+background: #E8F0FD 0% 0% no-repeat padding-box;
+border-radius: 25px 0px 0px 25px;
+opacity: 1;
+}
+.form-style{
+width:100%;
+height:100%;
+}
+
+.style-bulk{
+margin-top:30px;
+width: 152px;
+height: 40px;
+font: normal normal medium 16px/20px Google Sans;
+letter-spacing: 0px;
+color: #276EF1;
+border: 1px solid #DADCE0;
+border-radius: 4px;
+ display: inline-flex; 
+    align-items: center; 
+    padding: 10px 20px;
+}
+.style-bulk1{
+margin-top:30px;
+width: 100px;
+height: 40px;
+background: #276EF1 0% 0% no-repeat padding-box;
+border-radius: 4px;
+border:none;
+opacity: 1;
+color:white;
+margin-left:15px;
+ display: inline-flex; 
+    align-items: center; 
+    padding: 10px 20px;
+font-size:16px;
+}
+.text-circle{
+width: 32px;
+height: 32px;
+border-radius:50%;
+background:#1D4D40;
+color:white;
+justify-items: center;
+    text-align: center;
+    padding-top: 9px;
+}
+        /* Add more CSS styles for responsiveness as needed */
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+<div class="img-style"> <img src="img/Flipkart_logo-700x185.png"/></div>
+    
+   <div class="text-style1">
+         <p style="font-size:14px;">Pay Cycle: 31-May-2021 to 31-June-2021</p>
+         <p>Amazon India Pvt Ltd</p>
+     </div>
+  
+<div class="text-style"> </div>
+<div class="text-style"> </div>
+<div class="text-style"> </div>
+<div class="text-style">
+<div class="text-circle"> R </div>
+
+</div>
+
+
+<div class="text-style">  
+<img src="img/Group 8570.svg" width: 24px; height: 24px;/>
+<p style="margin-top:30px;">NOTIFICATION</p></div>
+
+<div class="text-style"> 
+<img src="img/help_outline-24px (3).svg" width: 24px; height: 24px;/>
+<p style="margin-top:30px;">SUPPORT</p></div>
+
+
+
+</div>
+<div class="main"> 
+    <div class="sidebar-style"> 
+        <div class="sidebar-left"> 
+            <img src="img/dashboard_black_24dp@2x.png"/><br>
+             <span>Dashboard</span><br><br>
+
+            <img src="img/work_history_black_24dp@2x.png"/><br>
+             <span>Monthly Process</span><br><br>
+             
+             <img src="img/tune_black_24dp@2x.png"/><br>
+             <span>Super Configura..</span><br><br>
+
+             <img src="img/auto_graph_black_24dp@2x.png"/><br>
+             <span>Master Reports</span><br> <br>
+           
+             <img src="img/read_more_black_24dp@2x.png"/><br>
+             <span>More</span><br> <br>
+        </div>
+        <div class="sidebar-right">
+            <p style="padding-top:10px;">Services Offered</p>
+              <div class="sidebar-right-2"><p>Org Setup</p></div>
+        </div>
+    </div>
+    <div class="container"> 
+             <div class="container-style">
+             <div class="header"><p style="padding-left:20px;font-weight:bold;">Org Setup</p></div>
+              <div class="header1">
+
+                 <div style="float:left;">
+                  <p style="padding-top:10px;">Details<p/>
+                 <p>Page to configure all the company details<p/>
+              </div>
+             
+                    <div style="float:right;">
+                 
+                   <img src="img/Group 10162.svg" width: 24px;height: 24px; style="margin-top:30px;padding-left:15px;"/>
+                     </div>
+
+                 <div style="float:right;">
+                   <button class="style-bulk1">
+                   <img src="img/save_black_24dp.svg" width: 24px;height: 24px;/>
+                    Save</button>  </div>
+
+                   <div style="float:right;">
+                   <button class="style-bulk">
+                   <img src="img/upload_black_24dp.svg" width: 24px;height: 24px;/>
+                    Bulk Upload</button>
+             </div>
+
+
+             </div>
+               
+               </div>
+             <hr></hr>
+
+<div class="form-style">
+        <form>
+           
+           <div style="float:left;width:200px; visibility: hidden;"> hello</div>
+           <div class="left">
+             <div class="logo-section">
+                  <img src="img/Oracle-Logo-For-Website.png"/>
+            </div>
+            <label for="orgId">Org ID</label>
+            <input type="text" id="orgId" name="orgId">
+
+            <label for="orgName">Org Name</label>
+            <input type="text" id="orgName" name="orgName">
+
+              <label for="aiFormat">No. of Integration</label>
+              <select id="aiFormat" name="aiFormat">
+                <option value="select">Select</option>
+                <option value="Y">Yes</option>
+                <option value="N">No</option>
+            </select>
+        
+
+            <label for="aiFormat">Similar Month</label>
+              <select id="aiFormat" name="aiFormat">
+                <option value="select">Select</option>
+                <option value="Y">Yes</option>
+                <option value="N">No</option>
+            </select>
+    
+            <label for="aiFormat">Integration Month</label>
+              <select id="aiFormat" name="aiFormat">
+                <option value="select">Select</option>
+                <option value="Y">Yes</option>
+                <option value="N">No</option>
+            </select>
+
+            <label for="aiFormat">AI Cycle</label>
+              <select id="aiFormat" name="aiFormat">
+                <option value="select">Select</option>
+                <option value="Y">Yes</option>
+                <option value="N">No</option>
+            </select>
+            
+            <label for="orgName">ERP Date (Agreed)</label>
+            <input type="date" id="orgName" name="orgName">
+       
+             <label for="orgName">Active AI Time</label>
+            <input type="time" id="orgName" name="orgName">
+
+           </div>
+
+            <div class="right">
+
+                 <div class="logo-section-right">
+                    <h3 style="font-size:17px;">Organisation Logo</h3>
+                    <p style="font-size:17px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p style="color:red;font-size:12px;">Preferred Image Size: 240px x 240px @ 72 DPI Maximum size of 1MB.</p>
+                 </div>
+               <label for="cityname">City Name</label>
+               <input type="text" id="cityname" name="cityname">
+
+               <label for="teamname">Team Name</label>
+               <input type="text" id="teamname" name="teamname">
+
+                <label for="teamcount">Team Count</label>
+               <input type="text" id="teamcount" name="teamcount">
+
+	     
+	       <label for="go-live-month">Go Live Month</label>
+               <div class="custom-select">
+                <select id="custom-select">
+               <option value="select" disable>Select</option>
+                <option value="Option 2">Option 2</option>
+               <option value="Option 3">Option 3</option>
+                <option value="Option 4">Option 4</option>
+               <option value="Option 5">Option 5</option>
+              </select>
+              </div>
+
+             <label for="go-live-month">TAT For Integration</label>
+               <div class="custom-select">
+                <select id="custom-select">
+               <option value="Option 1">Select</option>
+                <option value="Option 2">Option 2</option>
+               <option value="Option 3">Option 3</option>
+                <option value="Option 4">Option 4</option>
+               <option value="Option 5">Option 5</option>
+              </select>
+              </div>
+              
+            <label for="orgName">Integration Date</label>
+            <input type="date" id="orgName" name="orgName">
+
+             <label for="orgName">ISP Date (Agreed)</label>
+            <input type="date" id="orgName" name="orgName">
+
+             <label for="orgName">Active AI QC Time</label>
+            <input type="date" id="orgName" name="orgName">
+
+                 
+            <label for="monthlyCycles">
+             <input type="checkbox" id="monthlyCycles" name="monthlyCycles" checked>
+             Monthly Cycles
+            </label>
+
+
+             </div>
+           
+
+        </form>
+         </div>
+
+  </div>
+
+    </div>
+
+</div>
+    <footer>
+       
+    </footer>
+</body>
+</html>
